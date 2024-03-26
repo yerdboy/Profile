@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio website.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Portfolio</h1>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#video"></a></li>
+          <li><a href="#hire" id="hire-button">Hire</a></li>
+          <li><button id="toggle-dark-mode">Dark Mode</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="#" onclick="closeSidebar()">Close</a>
+      <a href="#projects">Projects</a>
+      <a href="#feedback">Feedback</a>
+    </div>
+    <div class="content">
+      <button onclick="openSidebar()">Open Sidebar</button>
+    </div>
+
+    <!-- Main Content -->
+    <section id="hero">
+      <div class="imgpart"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/64c4034d-9a7d-4f18-9364-396872f6944b/dgczhwp-ff519d86-4360-4882-a8c1-9310ea6bcc22.png/v1/fill/w_1280,h_1700,q_80,strp/light_yagami___death_note__1__by_aiqoz_dgczhwp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0YzQwMzRkLTlhN2QtNGYxOC05MzY0LTM5Njg3MmY2OTQ0YlwvZGdjemh3cC1mZjUxOWQ4Ni00MzYwLTQ4ODItYThjMS05MzEwZWE2YmNjMjIucG5nIiwiaGVpZ2h0IjoiPD0xNzAwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvNjRjNDAzNGQtOWE3ZC00ZjE4LTkzNjQtMzk2ODcyZjY5NDRiXC9haXFvei00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.GCdBlwzcYW_fQmCtPWncwSN-PludeOwEURvJ3TvSvVI" alt="" /></div>
+      <div class="tradepart">
+        <h4></h4>
+        <h2>Hi, I'm Yerdaulet Smailkhan</h2>
+        <h1><span style="color: white">and I'm</span> Backend Developer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          numquam maxime eligendi repellendus repudiandae maiores vero voluptate
+          placeat, quaerat id, dicta deserunt quo minus qui, neque dolorem fuga
+          omnis tempore.
+        </p>
+      </div>
+    </section>
+    <!--Gallery-->
+    <div class="container">
+      <section id="projects">
+        <h2>Projects</h2>
+        <input type="text" id="project-filter" placeholder="Search projects..." />
+        <div class="project-gallery">
+          <div class="project">
+            <img src="https://www.codingnepalweb.com/wp-content/uploads/2022/10/Modal-Box-ui.png" alt="Project 1" />
+            <h3>Modal</h3>
+          </div>
+          <div class="project">
+            <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2021/09/Dark-Mode-Boilerplate-In-Vanilla-JavaScript.png?fit=715%2C530&ssl=1" alt="Project 2" />
+            <h3>Dark mode</h3>
+          </div>
+          <div class="project">
+            <img src="https://www.freecodecamp.org/news/content/images/2022/08/Web-capture_13-8-2022_75125_127.0.0.1.jpeg" alt="Project 2" />
+            <h3>Counter</h3>
+          </div>
+          <div class="project">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmaqI6iu6lQfmIU8TXOcnN8eOTk4-S0dmEKt03tJQ4Bxc2V4WtaaO7m0IrMvmLOTaP2S2rzCM5eltJoRHoIPhoNhfKYIoi-vEXSFfe7Qmt3zBdLONW_yf7junGY52xG8K-CXfC6pwA1V_igrLUpWd0Usd8F_Sh_h8PipN2WfFX3ICWXCQ1tVlXZ2Cfww/s1327/Snapshot_22-06-01_12-10-02.png" alt="Project 2" />
+            <h3>Color flipper</h3>
+          </div>
+          <div class="project">
+            <img src="https://codingartistweb.com/wp-content/uploads/2022/07/Custom-Video-Player-01.png" alt="Project 2" />
+            <h3>Video player</h3>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal for hiring -->
+      <div id="hire-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Hire Me</h2>
+          <p>Contact form or additional information can go here.</p>
+          <p>ggg28828282gv@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Feedback Tabs -->
+      <id="feedback">
+        <section id="comment">
+      <h2>Feedback</h2>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">
+          Feedback 1
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">
+          Feedback 2
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">
+          Feedback 3
+        </button>
+      </div>
+      <div id="Tab1" class="tabcontent">
+        <h3>Avilio Bruno</h3>
+        <p>This is the first comment.</p>
+      </div>
+      <div id="Tab2" class="tabcontent">
+        <h3>Yagami Light</h3>
+        <p>This is the content of Tab 2.</p>
+      </div>
+      <div id="Tab3" class="tabcontent">
+        <h3>Johan Libert</h3>
+        <p>This is the content of Tab 3.</p>
+      </div>
+    </section>
+
+    <!--Video-->
+      <id="video">
+    <h2>Video</h2>
+    </video><iframe width="560 height="315" src="https://www.youtube.com/embed/BhX6dU3tH3s?si=dKytjxk4NZkhvFpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--footer-->
+    <footer>
+      <p>&copy; 2024 Your Website</p>
+    </footer>
+    
+    <script src="portfolio website.js"></script>
+  </body>
+</html>
